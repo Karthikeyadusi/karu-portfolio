@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>karthikeyadusi.dev — Coming Soon</title>
+  <meta name="description" content="Something is being built. Come back soon." />
+  <meta name="theme-color" content="#0e0e0e" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Soft ambient light -->
+  <div class="ambient-light" aria-hidden="true"></div>
+
+  <main class="page">
+    <!-- Domain -->
+    <p class="domain" id="domain-text">KARTHIKEYADUSI.DEV</p>
+
+    <!-- Headline -->
+    <h1 class="headline" id="headline">
+      <span class="headline-line">Portfolio is</span>
+      <span class="headline-line">being cooked.</span>
+    </h1>
+
+    <!-- Divider dot -->
+    <div class="divider-dot" aria-hidden="true"></div>
+
+    <!-- Countdown -->
+    <div class="countdown" id="countdown" aria-label="Countdown timer">
+      <div class="countdown-col">
+        <span class="countdown-number" id="cd-hours">24</span>
+        <span class="countdown-label">HOURS</span>
+      </div>
+      <span class="countdown-sep" aria-hidden="true">:</span>
+      <div class="countdown-col">
+        <span class="countdown-number" id="cd-minutes">30</span>
+        <span class="countdown-label">MINUTES</span>
+      </div>
+      <span class="countdown-sep" aria-hidden="true">:</span>
+      <div class="countdown-col">
+        <span class="countdown-number" id="cd-seconds">00</span>
+        <span class="countdown-label">SECONDS</span>
+      </div>
+    </div>
+
+    <!-- Coming Soon -->
+    <p class="coming-soon" id="coming-soon"><span class="coming-soon-line"></span>COMING SOON<span class="coming-soon-line"></span></p>
+
+    <!-- Tease -->
+    <p class="tease" id="tease" role="button" tabindex="0" aria-label="Worth the wait">Worth the wait.</p>
+
+    <!-- Dim overlay for tease focus effect -->
+    <div class="tease-dim" id="tease-dim" aria-hidden="true"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
