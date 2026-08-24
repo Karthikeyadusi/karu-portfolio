@@ -19,19 +19,19 @@
 
 
   // ── Countdown Timer ──────────────────────────────
-  // 24 hours 30 minutes = 88200 seconds
+  // 21 hours = 75600 seconds
   // Store end timestamp in localStorage so it persists
 
-  const TOTAL_SECONDS = 24 * 3600 + 30 * 60; // 88200
-  const STORAGE_KEY = 'kd_countdown_end';
+  const TOTAL_SECONDS = 21 * 3600; // 21 hours (75600s)
+  const STORAGE_KEY = 'kd_countdown_end_v2';
 
   function getEndTimestamp() {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored) {
       const ts = parseInt(stored, 10);
-      if (!isNaN(ts)) return ts;
+      if (!isNaN(ts) && ts > Date.now()) return ts;
     }
-    // First visit — set the end time
+    // Set a fresh 21-hour countdown
     const end = Date.now() + TOTAL_SECONDS * 1000;
     localStorage.setItem(STORAGE_KEY, end.toString());
     return end;
